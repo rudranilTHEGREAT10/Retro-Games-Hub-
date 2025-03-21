@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Games Hub</title>
+  <!-- Material-UI CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mui/material@5.15.7/dist/css/mui.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.jpg">
+</head>
+<body>
+  <div id="root">
+    <!-- App Bar -->
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container header-content">
+        <img src="logo.jpg" alt="Retro Games Hub Logo" class="header-logo">
+        <h1 class="mui--text-title">Retro Games Hub</h1>
+      </div>
+    </header>
+
+    <!-- Game Grid -->
+    <div class="mui-container game-grid">
+      <div class="mui-row">
+        <div class="mui-col-md-4">
+          <div class="mui-panel game-card" data-game="tetris">
+            <img src="tetris.png" alt="Tetris">
+            <h3>Tetris</h3>
+            <button class="mui-btn mui-btn--primary play-btn">Play</button>
+          </div>
+        </div>
+        <div class="mui-col-md-4">
+          <div class="mui-panel game-card" data-game="snake">
+            <img src="snake.png" alt="Snake">
+            <h3>Snake</h3>
+            <button class="mui-btn mui-btn--primary play-btn">Play</button>
+          </div>
+        </div>
+        <div class="mui-col-md-4">
+          <div class="mui-panel game-card" data-game="pacman">
+            <img src="pacman.png" alt="Pac-Man">
+            <h3>Pac-Man</h3>
+            <button class="mui-btn mui-btn--primary play-btn">Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Game -->
+    <div id="game-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <canvas id="game-canvas" width="256" height="240"></canvas>
+      </div>
+    </div>
+
+    <!-- Social Links Footer -->
+    <footer class="social-footer">
+      <div class="mui-container">
+        <h3 class="social-title">Follow Us</h3>
+        <div class="social-links">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link">
+            <span class="material-icons">twitter</span>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link">
+            <span class="material-icons">facebook</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+            <span class="material-icons">instagram</span>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+            <span class="material-icons">github</span>
+          </a>
+         
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Audio -->
+  <audio id="click-sound" src="https://www.myinstants.com/media/sounds/retro-click.mp3"></audio>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@mui/material@5.15.7/dist/js/mui.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>s
